@@ -12,15 +12,7 @@ const restaurantsDB = {
       rating: "3.5/5"
     },
     {
-      name: "Punjabi Dhaba",
-      rating: "3.5/5"
-    },
-    {
-      name: "Singh Kitchen",
-      rating: "3.5/5"
-    },
-    {
-      name: "Indian Cusine",
+      name: "Singh's Kitchen",
       rating: "3.5/5"
     }
   ],
@@ -33,7 +25,12 @@ const restaurantsDB = {
     {
       name: "Currys N Crunch",
       rating: "4.5/5"
+    },
+    {
+      name: "Punjabi Dhaba",
+      rating: "4.5/5"
     }
+
   ],
   FastFood: [
     {
@@ -42,6 +39,10 @@ const restaurantsDB = {
     },
     {
       name: "Burger King",
+      rating: "3.5/5"
+    },
+    {
+      name: "McDonalds",
       rating: "3.5/5"
     }
   ]
@@ -74,13 +75,13 @@ function App() {
     <hr />
 
       <div className="cards">
-        {restaurantsDB[selectedRestaurant].map((book) => (
+        {restaurantsDB[selectedRestaurant].map((item) => (
           <div
-            key={book.name}
+            key={item.name}
             className="card"
           >
-          <h4 class="card-title">{book.name}</h4>
-          <p class="card-description">Reviews: {book.rating}</p>
+          <h4 class="card-title">{item.name}</h4>
+          <p class="card-description">{selectedRestaurant} Restuarant has rating of {item.rating}</p>
           <a class="btn card-btn" href="">View</a>
           </div>
         ))}
