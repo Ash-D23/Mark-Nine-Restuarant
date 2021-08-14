@@ -1,0 +1,81 @@
+.App {
+  text-align: center;
+}
+
+.btn {
+  background: #11cdd4;
+  background-image: -webkit-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -moz-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -ms-linear-gradient(top, #11cdd4, #11999e);
+  background-image: -o-linear-gradient(top, #11cdd4, #11999e);
+  background-image: linear-gradient(to bottom, #11cdd4, #11999e);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+  text-decoration: none;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  color: #ffffff;
+  border: none;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.cards{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.button-container{
+  padding: 10px;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+
+  background: #005AA7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 20px;
+  border-radius: 15px;
+  width: 25%;
+  height: 170px;
+  margin-bottom: 20px;
+}
+
+.card-title{
+  color: black;
+  font-size: larger;
+}
+
+.card-description{
+
+  color: white;
+}
+
+.card-btn{
+  width: 40%;
+  font-size: 1.2rem;
+  padding: 5px;
+}
